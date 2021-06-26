@@ -1,5 +1,5 @@
-function LoginForm() {
+function Sample() {
   return null;
 }
 
-export default LoginForm;
+export default Sample;
