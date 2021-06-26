@@ -1,12 +1,10 @@
 import './App.css';
-import Hello from './shared/welcome';
-
+import LoginPage from './feature/pages/login-page';
 
 function App() {
   return (
     <div className="App">
-
-      <Hello title="Santhosh"></Hello>
+      <LoginPage></LoginPage>
     </div>
   );
 }

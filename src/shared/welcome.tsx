@@ -1,8 +1,8 @@
 interface Para {
-  title: string;
+  name: string;
 }
 
-function Hello(props: Para) {
-  return <h1>Hello, {props.title}</h1>;
+function Welcome(props: Para) {
+  return <h1>Hello, {props.name}</h1>;
 }
-export default Hello;
+export default Welcome;
