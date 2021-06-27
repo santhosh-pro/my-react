@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { get } from "../../shared/base-http-wrapper";
 import { State } from "../state";
-import HttpUtil from "../../shared/http-util";
 
 const initialState: State<any> = {
   payload: {},
@@ -43,7 +43,7 @@ export const login = () => {
       dispatch(loginLoading())
 
       try {
-          const response = await HttpUtil.get(`posts`,{});
+          const response = await get(`posts`,{});
 
           const data = await response;
 

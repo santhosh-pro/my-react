@@ -1,8 +1,15 @@
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as Yup from "yup";
+import * as Yup from 'yup';
 
-export const validationSchema = Yup.object().shape({
-  username: Yup.string().required("Username is required"),
-  password: Yup.string().required("Password Name is required"),
-});
-export const loginFormOptions = { resolver: yupResolver(validationSchema) };
+ export const validate = Yup.object({
+    email: Yup.string()
+      .email('Email is invalid')
+      .required('Email is required'),
+    password: Yup.string()
+      .min(6, 'Password must be at least 6 charaters')
+      .required('Password is required')
+  });
+
+export const initialValue={
+  email: '',
+  password: ''
+}

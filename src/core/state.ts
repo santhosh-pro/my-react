@@ -1,4 +1,4 @@
-export interface State<T> {
+export type State<T> ={
   payload: T;
   errorMessage:string;
   isSuccess:boolean;

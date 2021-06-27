@@ -1,4 +1,4 @@
-export interface PagedResponse
+export type PagedResponse=
 {
     pageNumber: number;
     pageSize: number;

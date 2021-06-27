@@ -1,4 +1,4 @@
-export interface PagingParam {
+export type PagingParam= {
     orderBy : string;
     orderByPropertyName : string;
     pageNumber : number;
